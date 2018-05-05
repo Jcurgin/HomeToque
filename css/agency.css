@@ -1,0 +1,291 @@
+body {
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  background: url(../img/logoToque_Fond.jpg);
+  background-color: #5a5a5c;
+}
+
+p {
+  line-height: 1.75;
+}
+
+a {
+  color: #5a5a5c;
+}
+
+a:hover {
+  color: #5a5a5c;
+}
+.timeline-image a{
+  color: white;
+}
+
+.text-primary {
+  color: #5a5a5c !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+section {
+  padding: 100px 0;
+}
+
+
+img {
+  width: 50px;
+  vertical-align: middle;
+  border-style: none;
+}
+
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+section h3.section-subheading {
+  font-size: 16px;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 75px;
+  text-transform: none;
+  font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.intro-text{
+  position: absolute;
+  top: 40%;
+  left: 1%;
+  text-align: center;
+  width: 100%;
+  z-index: 2;
+}
+
+.intro-text img{
+  width: 7%;
+
+}
+
+.row-fe-h2 {
+  background: url(../img/buffet.jpg) 50% 50% fixed no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.customOverlayContainer {
+  background-size: cover!important;
+  height: 500px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+
+@media (min-width: 768px) {
+  section {
+    margin-top: 30px;  
+  }
+}
+
+.btn {
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 700;
+ }
+
+
+video{
+  min-width: 100%;
+  min-height: 100%;
+  overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0.9;
+}
+
+#bodycolor{
+  background-color: white;
+  max-width: 90%;
+  margin-top: 5%;
+}
+
+.btn-xl {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.btn-primary {
+  background-color: #5a5a5c;
+  border-color: #5a5a5c;
+}
+
+.btn-primary:active, .btn-primary:focus, .btn-primary:hover {
+  background-color:#5a5a5c !important;
+  border-color: white  !important;
+  color: white;
+}
+
+.btn-primary:active, .btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(3, 3, 3, 0.5) !important;
+}
+
+span{
+  position: absolute;
+    top: 10px;
+    left: 50%;
+    content: '';
+    width: 6px;
+    height: 6px;
+    margin-left: -3px;
+    background-color: #fff;
+    border-radius: 100%;
+    box-sizing: border-box;
+}
+
+#mainNav {
+  background-color: white;
+  z-index: 999;
+ 
+}
+
+#mainNav .navbar-toggler {
+  font-size: 12px;
+  right: 0;
+  padding: 13px;
+  text-transform: uppercase;
+  color: white;
+  border: 0;
+  background-color: #5a5a5c;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-brand {
+  color: #ffc107;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+#mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
+  color: #ffc107;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link {
+  font-size: 90%;
+  font-weight: 400;
+  padding: 0.75em 0;
+  letter-spacing: 1px;
+  color: black;
+  font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+#mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
+  color: #5a5a5c;
+}
+
+header.masthead .intro-text .intro-lead-in {
+  font-size: 40px;
+  font-style: italic;
+  line-height: 40px;
+  margin-bottom: 20px;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+header.masthead .intro-text .intro-heading {
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 75px;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+
+
+.service-heading {
+margin: 15px 0;
+text-transform: none;
+}
+
+
+@media (min-width: 992px) {
+  #mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    -webkit-transition: padding-top 0.3s, padding-bottom 0.3s;
+    -moz-transition: padding-top 0.3s, padding-bottom 0.3s;
+    transition: padding-top 0.3s, padding-bottom 0.3s;
+    border: none;
+    background-color: transparent;
+    z-index: 999;
+  }
+  #mainNav .navbar-brand {
+    font-size: 1.75em;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    transition: all 0.3s;
+  }
+  #mainNav .navbar-nav .nav-item .nav-link {
+    padding: 1.1em 1em !important;
+  }
+  #mainNav.navbar-shrink {
+    padding-top: 0;
+    padding-bottom: 0;
+    background-color: #ffffff;
+  }
+  #mainNav.navbar-shrink .navbar-brand {
+    font-size: 1.25em;
+    padding: 12px 0;
+  }
+}
+
+
+header.masthead {
+  text-align: center;
+  color: rgb(255, 193, 7);
+  background-image: url("");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+}
+
+
+@media (min-width: 1200px) {
+}
+@media (max-width:768px){
+  video{
+    display: none;
+   }
+   header.masthead{
+     background-image: url(../img/traiteur.jpg);
+     background-size: cover;
+     background-position: center;
+     height: auto;
+     padding: 300px 0;
+   }
+   .intro-text{
+    position: static;
+   }
+   header.masthead .intro-text .intro-heading {
+    font-size: 44px;
+    font-weight: 700;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  }
+  header.masthead .intro-text .intro-lead-in {
+    font-size: 24px;
+    font-style: italic;
+    line-height: 40px;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  }
+  
+}
