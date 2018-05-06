@@ -134,7 +134,7 @@ font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   font-family: 'Montserrat', sans-serif;
 }
 #portfolio .nav-item{
-  padding: 30px 170px 30px 170px;
+  margin-top: 5ex;
   color: #ffc107;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 } 
@@ -170,6 +170,7 @@ font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   font-weight: 700;
  }
 
+ 
 
 video{
   min-width: 100%;
@@ -315,6 +316,11 @@ color: black;
 }
 
 @media (min-width: 1200px) {
+  #portfolio .nav-item{
+    padding: 30px 170px 30px 170px;
+    color: #ffc107;
+    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  } 
 }
 @media (max-width:768px){
   video{
@@ -342,6 +348,7 @@ color: black;
     font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
   }
   
+
 }
 
 
@@ -524,3 +531,18 @@ footer {
   }
 }
 
+/***SEARCH****/
+
+.search-form-wrapper {
+  display: none;
+  position: absolute;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 20px 15px;
+  margin-top: 85px;
+  background: url(/resources/images/misc/bg_search-open.png) right center no-repeat #ffc107;
+}
+.search-form-wrapper.open {
+  display: block;
+}

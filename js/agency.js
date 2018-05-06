@@ -75,3 +75,36 @@ function calculateAnimationProps () {
     toggleRight: right / 2
   };
 }
+
+
+$( document ).ready(function() {
+  $('[data-toggle=search-form]').click(function() {
+      $('.search-form-wrapper').toggleClass('open');
+      $('.search-form-wrapper .search').focus();
+      $('html').toggleClass('search-form-open');
+    });
+    $('[data-toggle=search-form-close]').click(function() {
+      $('.search-form-wrapper').removeClass('open');
+      $('html').removeClass('search-form-open');
+    });
+  $('.search-form-wrapper .search').keypress(function( event ) {
+    if($(this).val() == "Search") $(this).val("");
+  });
+  
+  
+  });
+//1. élément(string)
+//2. options(objet)
+  ScrollReveal().reveal('.card-deck',{
+    duration:1300, 
+    origin: 'bottom', 
+    distance: '10px',
+    scale: 0.2,
+    opacity: 0,
+    delay: 400,
+    reset:true,
+    mobile:false,
+    useDelay:'always',
+    viewFactor:0.5,
+  
+  });

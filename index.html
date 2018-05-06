@@ -57,13 +57,32 @@
                     <a class="nav-link js-scroll-trigger" href="#contact">Se connecter</a>
                   </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#contact"><i class="fa fa-shopping-cart fa-2x"></i></a>
+                    <a class="nav-link js-scroll-trigger" href="#contact">Panier</a>
                   </li>
-                 
+                <li class="nav-item">
+                    <div id="navbar" class="navbar-collapse">
+                        <div class="hidden-xs navbar-form navbar-right">
+                           <a onclick="documentTrack('#search');" href="#search" class="search-form-tigger btn btn-warning"  data-toggle="search-form"><i class="fa fa-search" aria-hidden="true"></i></a>
+                        </div>
+                    <div class="hidden-xs navbar-form navbar-right">
+                           <inputtype="text" hidden name="search" class="search form-control" placeholder="Rechercher">
+                        </div>
+                        <!--/.navbar-collapse -->
+                     </div>
+                </li>  
               </ul>
             </div>
+            <div class="search-form-wrapper">
+                <form class="search-form" id="" action="">
+                   <div class="input-group">
+                      <input type="text" name="search" class="search form-control" placeholder="Rechercher">
+                   </div>
+                </form>
+             </div>
           </div>
         </nav>
+     
+
         
  <!-- Video -->
         <video  muted src="media/food-promotion.mp4"></video>
@@ -85,10 +104,7 @@
           </div>
         </div>
         <div class="row text-center">
-          <p>Après 7 annnée passé dans l'univers commercial de la logistique du print et du web, j'ai décidé de concrétisé un
-            rêve qui a commencé il y a plus de 15ans. Passionnée du web et de son fonctionnement j'ai décidé de faire du métier
-            de développer web mon avenir, toujours désireux de faire découvrir mon univers ou de découvrir le votre n'hésitez
-            pas, Rêvons enssemble!</p>
+          <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
   
         </div>
       </div>
@@ -122,7 +138,7 @@
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="container" id="cardplace">
                   <div class="card-deck">
-                      <div class="col-md-4">
+                      <div class="col-md-4" id="card1" >
                           <h5 class="card-title">Buffets <span>salé</span> </h5>
                         <img class="card-img-top" src="img/minicard1.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -130,7 +146,7 @@
                         </div>
                         <a href=""><strong> Voir le menu</strong></a>     
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4"id="card2">
                           <h5 class="card-title">Buffets <span>sucré</span></h5>
                         <img class="card-img-top" src="img/minicard2.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -138,7 +154,7 @@
                         </div>
                         <a href=""><strong> Voir le menu</strong></a>     
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4" id="card3">
                           <h5 class="card-title">Buffets <span>mixte</span></h5>
                         <img class="card-img-top" src="img/minicard3.jpg" alt="Card image cap">
                         <div class="card-body">                          
@@ -241,30 +257,30 @@
   
             <ul class="footer-list-top">
               <li>
-                <h4 class="footer-list-header">About Pavilion</h4></li>
-              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">GET TO KNOW US</a></li>
-              <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">PROMOS</a></li>
-              <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">BECOME A RETAILER</a></li>
+                <h5 class="footer-list-header">Social</h5></li>
+              <li><a href='/shop/about-mission' class="generic-anchor footer-list-anchor" itemprop="significantLink">Blog</a></li>
+              <li><a href='/promos.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">articles</a></li>
+              <li><a href='/retailers/new-retailers.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">Nos partenaires</a></li>
           
-              <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">JOB OPENINGS</a></li>
+              <li><a href='/job-openings.html' itemprop="significantLink" class="generic-anchor footer-list-anchor">Nos contributeurs</a></li>
             </ul>
             <ul class="footer-list-top">
               <li>
-                <h4 class="footer-list-header">The Gift Selection</h4></li>
+                <h5 class="footer-list-header">Nos sections</h5></li>
           
           
-              <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">ANGEL FIGURINES</a></li>
-              <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">HOME DECOR</a></li>
-              <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">MUGS</a></li>
-              <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">PET LOVER</a></li>
+              <li><a href='/Angels/cat/id/70' class="generic-anchor footer-list-anchor">Recettes</a></li>
+              <li><a href='/Home-Decor/cat/id/64' class="generic-anchor footer-list-anchor">Traiteurs</a></li>
+              <li><a href='/Mugs/cat/id/32' class="generic-anchor footer-list-anchor">Buffets</a></li>
+              <li><a href='/Pet-Lover/cat/id/108' class="generic-anchor footer-list-anchor">Cocktails</a></li>
             </ul>
             <ul class="footer-list-top">
               <li id='help'>
-                <h4 class="footer-list-header">Please Help Me</h4></li>
-              <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">CONTACT</a></li>
+                <h5 class="footer-list-header">Nous trouver</h5></li>
+              <li><a href='/shop/about-contact' class="generic-anchor footer-list-anchor" itemprop="significantLink">Contact</a></li>
               <li><a href='/faq.html' class="generic-anchor footer-list-anchor" itemprop="significantLink">FAQ</a></li>
-              <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">STORE LOCATOR</a></li>
-              <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">NEW USERS</a></li>
+              <li id='find-a-store'><a href='/shop/store-locator' class="generic-anchor footer-list-anchor" itemprop="significantLink">La boutique</a></li>
+              <li id='user-registration'><a href='/shop/user-registration?URL=' class="generic-anchor footer-list-anchor" itemprop="significantLink">à propos</a></li>
             </ul>
             <section class="footer-social-section flex-rw">
                 <span class="footer-social-overlap footer-social-icons-wrapper">
@@ -280,8 +296,11 @@
           </footer>
 
   
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-
+   <!---Scroll Reveal JS-->
+   <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>         
   <!-- Bootstrap core JavaScript -->
   <script src="vendor/jquery/jquery.min.js"></script>
   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -294,7 +313,7 @@
   <script src="js/contact_me.js"></script>
 
   <!-- Custom scripts for this template -->
-  <script src="js/agency.min.js"></script>
+  <script src="js/agency.js"></script>
 
 </body>
 
