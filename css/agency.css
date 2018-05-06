@@ -57,8 +57,8 @@ section h2.section-heading span{
 
 section h2.contribution-heading {
   font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 90px;
+  margin-top: 5ex;
+  margin-bottom: 5ex;
   font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
 }
 section h2.contribution-heading span{
@@ -102,6 +102,30 @@ section h2.contribution-heading span{
   align-items: center;
 }
 
+/*******CARD*******/ 
+#cardplace{
+  margin-top: 5%;
+  text-align: center;
+  
+}
+#cardplace img{
+  width: 80%;
+  border-radius: 70%;
+}
+
+.card-title{
+margin-bottom:4ex;
+font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+}
+.card-title span{
+  margin-bottom:4ex;
+  font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive;
+  color:  #ffc107;; 
+}
+
+
+
+/*********ENDCARD******/
 
 .customOverlayContainer {
   background-size: cover!important;
@@ -286,7 +310,9 @@ header.masthead {
   background-size: cover;
   position: relative;
 }
-
+header.masthead span {
+color: black;
+}
 
 @media (min-width: 1200px) {
 }
@@ -497,3 +523,4 @@ footer {
     font-size: 1.3em
   }
 }
+

@@ -50,3 +50,28 @@
 })(jQuery); // End of use strict
 
 
+var headerContainer = $('.header-container');
+var topPanel = headerContainer.find('#top-panel');
+var searchHolder = headerContainer.find('.search-holder');
+var searchForm = headerContainer.find('#search-form');
+var openToggle = headerContainer.find('#form-open');
+var closeToggle = searchForm.find('#form-close');
+
+function calculateAnimationProps () {
+  var vpWidth = $(window).outerWidth(true);
+  var width = 0;
+  
+  if (vpWidth < 1000) {
+    width = headerContainer.outerWidth(true) - 40; // Minus container side padding
+  } else {
+    width = topPanel.outerWidth(true);
+  }
+  
+  var right = width - openToggle.outerWidth(true);
+  
+  return {
+    formWidth: width,
+    formRight: right,
+    toggleRight: right / 2
+  };
+}
