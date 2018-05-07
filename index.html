@@ -85,13 +85,13 @@
 
         
  <!-- Video -->
-        <video  muted src="media/food-promotion.mp4"></video>
+        <video autoplay muted src="media/food-promotion.mp4"></video>
         
     <!-- Intro -->
       <div class="intro-text">
-        <div class="intro-heading animated fadeInLeft"> <span>Home</span>'Toque <img src="img/logoToque.png" alt=""></div>
-        <div class="intro-lead-in animated fadeInRight">Découvrez notre concept, ici le traiteur c'est nous, c'est vous !</div>
-        <button type="button" class="btn btn-outline-warning">A Table !</button>
+        <div class="intro-heading" id="animIntro1"> <span>Home</span>'Toque <img src="img/logoToque.png" alt=""></div>
+        <div class="intro-lead-in" id="animIntro2">Découvrez notre concept, ici le traiteur c'est nous, c'est vous !</div>
+        <button type="button" id="animIntro3"class="btn btn-outline-warning">A Table !</button>
       </div>
   </header>
  
@@ -99,11 +99,11 @@
    <section id="services">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12 text-center">
+          <div class="col-lg-12 text-center" id="animation1">
             <h2 class="section-heading text-uppercase">Do It <span>Yourselft</span></h2>
           </div>
         </div>
-        <div class="row text-center">
+        <div class="row text-center" id="animation2">
           <p>Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un peintre anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.</p>
   
         </div>
@@ -126,6 +126,7 @@
         </div>
       </div>
 <!-- Paralaxe -->
+<!-- Carte présentation -->
    <section class="" id="portfolio">
       <div class="container-fluid">
           <nav>
@@ -138,7 +139,7 @@
               <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
                 <div class="container" id="cardplace">
                   <div class="card-deck">
-                      <div class="col-md-4" id="card1" >
+                      <div class="col-md-4" id="animCard" >
                           <h5 class="card-title">Buffets <span>salé</span> </h5>
                         <img class="card-img-top" src="img/minicard1.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -146,7 +147,7 @@
                         </div>
                         <a href=""><strong> Voir le menu</strong></a>     
                     </div>
-                    <div class="col-md-4"id="card2">
+                    <div class="col-md-4"id="animCard">
                           <h5 class="card-title">Buffets <span>sucré</span></h5>
                         <img class="card-img-top" src="img/minicard2.jpg" alt="Card image cap">
                         <div class="card-body">
@@ -154,7 +155,7 @@
                         </div>
                         <a href=""><strong> Voir le menu</strong></a>     
                     </div>
-                    <div class="col-md-4" id="card3">
+                    <div class="col-md-4" id="animCard">
                           <h5 class="card-title">Buffets <span>mixte</span></h5>
                         <img class="card-img-top" src="img/minicard3.jpg" alt="Card image cap">
                         <div class="card-body">                          
@@ -192,6 +193,7 @@
       </div>
       <!-- Paralaxe -->
 
+        <!-- Contribution -->
       <section id="contribution">
           <div class="container">
               <div class="col-lg-12 text-center">
@@ -308,9 +310,7 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-  <!-- Contact form JavaScript -->
-  <script src="js/jqBootstrapValidation.js"></script>
-  <script src="js/contact_me.js"></script>
+
 
   <!-- Custom scripts for this template -->
   <script src="js/agency.js"></script>

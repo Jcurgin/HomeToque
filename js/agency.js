@@ -95,16 +95,49 @@ $( document ).ready(function() {
   });
 //1. élément(string)
 //2. options(objet)
-  ScrollReveal().reveal('.card-deck',{
-    duration:1300, 
-    origin: 'bottom', 
-    distance: '10px',
-    scale: 0.2,
-    opacity: 0,
-    delay: 400,
-    reset:true,
-    mobile:false,
-    useDelay:'always',
-    viewFactor:0.5,
-  
-  });
+  // ScrollReveal().reveal('.card-deck',{
+  //   duration:1300, 
+  //   origin: 'bottom', 
+  //   distance: '10px',
+  //   scale: 0.2,
+  //   opacity: 0,
+  //   delay: 400,
+  //   container: window.document.documentElement,
+  //   reset:true,
+  //   mobile:false,
+  //   useDelay:'always',
+  //   viewFactor:0.5,
+  // });
+var sr = ScrollReveal({
+  reset:true,
+  useDelay:'always'
+});
+
+//Intro
+sr.reveal('#animIntro1', {duration: 1000, origin:'left',distance:'150px'})
+sr.reveal('#animIntro2', {duration: 1000, origin:'right',distance:'150px'})
+sr.reveal('#animIntro3', {duration: 1000,delay:500, origin:'bottom',distance:'150px'})
+
+//About
+sr.reveal('#animation1 h2');
+sr.reveal('#animation2 p', {delay: 500,});
+
+//Card presentation
+sr.reveal('#animCard', 500);
+
+
+//contribution
+
+sr.reveal('.card',500, {origin:'bottom', distance:'500px'})
+
+
+// video
+
+var iterations = 1;
+video.addEventListener('ended', function(){
+  if (iterations < 2 ){
+    this.currenTime = 0;
+    this.play();
+    iterations++;
+  }
+})
